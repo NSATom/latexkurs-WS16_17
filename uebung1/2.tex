@@ -1,0 +1,25 @@
+%%%names
+% XeTeX engine
+% use KOMA class for cool presets like A4
+\documentclass{scrartcl}
+
+\usepackage{fontspec} % support utf-8 output; xelatex already has utf8 input
+\setmainfont{Linux Libertine O} % neat font is neat
+
+\usepackage{fancyhdr} % Header/footer support
+\pagestyle{fancy}
+\usepackage{enumerate} % package for sorted lists
+
+\lhead{Übung 1.2} % left header
+\rhead{Name1, Name2, Name3} % right header
+
+\begin{document} % start with the actual content
+\begin{enumerate}
+    \item Kätzchen
+    \item Grüne Meerkatze
+    \item Antennenwels
+    \item Orizabus subaziro % look it up, its a thing!
+\end{enumerate}
+\end{document} % end of written content
+
+% vim: ft=tex noai et sw=2 tw=80:
