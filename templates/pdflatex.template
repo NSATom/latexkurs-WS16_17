@@ -1,0 +1,21 @@
+%%%names
+
+% use KOMA class for cool presets like A4
+\documentclass{scrartcl}
+
+% load default packages for german and unicode support
+\usepackage[ngerman]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+% load font to use (default linux libertine because it is a neat one
+\usepackage{libertine}
+\usepackage{libertinust1math}
+
+% start with the actual content
+\begin{document}
+
+% end of written content
+\end{document}
+
+% vim: ft=tex et sw=2 tw=80:
