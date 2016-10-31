@@ -1,5 +1,5 @@
 %%%names
-
+% pdfTeX engine
 % use KOMA class for cool presets like A4
 \documentclass{scrartcl}
 
