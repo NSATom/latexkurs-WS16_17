@@ -1,0 +1,26 @@
+%%%names
+
+% use KOMA class for cool presets like A4
+\documentclass{scrartcl}
+
+% load default packages for german and unicode support
+\usepackage{polyglossia}
+\setmainlanguage{german}
+\usepackage{xltxtra}
+
+% set up fonts
+\setmainfont{Linux Libertine O}
+\setsansfont{Linux Biolinum O}
+\setmonofont{DejaVu Sans Mono}
+
+% load blindtext package for awesome text that you can test with
+\usepackage{blindtext}
+
+% start with the actual content
+\begin{document}
+% insert blinddocument as it has headlines etc which _should_ be in Sans Serif
+\blinddocument
+% end of written content
+\end{document}
+
+% vim: ft=tex et sw=2 tw=80:
