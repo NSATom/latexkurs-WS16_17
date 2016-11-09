@@ -1,0 +1,32 @@
+%%%names
+% XeTeX engine
+% use KOMA class for cool presets like A4
+\documentclass{scrartcl}
+
+% load default packages for german and unicode support
+\usepackage{polyglossia}
+\setmainlanguage{german}
+\usepackage{xltxtra}
+\usepackage{amsmath}
+\usepackage{wasysym}
+
+% start with the actual content
+\begin{document}
+
+Im folgenden die Maxwell-Gleichungen:
+\begin{align}
+&\nabla \times \vec{E} = - \frac{\partial \vec{B}}{\partial t}
+\\
+&\nabla \times \vec{B} = \vec{j} + \frac{\partial \vec{E}}{\partial t}
+\\
+&\nabla \cdot \vec{E} = \rho \vphantom{\frac{\partial \vec{E}}{\partial t}} % \vphantom-command for same vertical distance between lines
+\\
+&\nabla \cdot \vec{B} = 0 \vphantom{\frac{\partial \vec{E}}{\partial t}}
+\end{align}
+Das folgende Integral kann jetzt gelöst werden:
+\begin{equation}
+\oint 
+\end{equation}  
+	
+	% end of written content
+\end{document}
