@@ -8,7 +8,7 @@
 \setmainlanguage{german}
 \usepackage{xltxtra}
 \usepackage{amsmath}
-\usepackage{wasysym}
+\usepackage{txfonts} % for integrals
 
 % start with the actual content
 \begin{document}
@@ -23,10 +23,27 @@ Im folgenden die Maxwell-Gleichungen:
 \\
 &\nabla \cdot \vec{B} = 0 \vphantom{\frac{\partial \vec{E}}{\partial t}}
 \end{align}
-Das folgende Integral kann jetzt gelöst werden:
+
+
+Das folgende Integral kann jetzt dargestellt werden:
 \begin{equation}
-\oint 
+\oint \kern-0.45em \oiintctrclockwise \kern-1.3em \oiintclockwise  \kern-1.1em \vec{\vphantom{\oint}}
+% \kern verschiebt die Integrale ineinander/ den Vektorpfeil über die Integrale
+% \vec{\vphantom{\oint}} erzeugt einen Vektorpfeil auf Höhe über dem Integral
 \end{equation}  
+
+
+Zwei Formeln aus dem tractatus philosophicus:
+\begin{equation}
+\text{tractatus philosophicus, Satz 6. }
+  \left\{
+    \begin{matrix}
+       
+       & 03:  & [ o, \xi, \xi + 1] \\
+       & 231: & 1 + 1 + 1 + 1 = (1+1) + (1+1) 
+    \end{matrix}
+  \right.
+\end{equation}
 	
 	% end of written content
 \end{document}
