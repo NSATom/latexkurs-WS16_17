@@ -1,0 +1,36 @@
+%%%names
+% XeTeX engine
+% use KOMA class for cool presets like A4
+\documentclass{scrartcl}
+
+% load default packages for german and unicode support
+\usepackage{polyglossia}
+\setmainlanguage{german}
+\usepackage{xltxtra}
+
+% load booktabs for nice and pretty tables
+\usepackage{booktabs}
+\usepackage{multirow}
+
+% start with the actual content
+\begin{document}
+\begin{table}
+  \begin{tabular}{*{6}{c}}
+    \toprule
+    Produkt & Herkunft & Saison & Handelsklasse & verf\"ugbar \\
+    \midrule
+    Auberginen  & Frankreich    & Juli -- September     & \rom{1}       & -- \\
+    Esskastanien& Frankreich    & September             & \rom{1}       & -- \\
+    Feldsalat   & Deutschland   & Oktober -- Februar    & \rom{2}       & ja \\
+    K\"urbis    & Deutschland   & August -- Dezember    & \rom{1}       & ja \\
+    Rote Beete  & Italien       & Sebtember -- Februar  & \rom{1}       & ja \\
+    Zucchini    & Spanien       & Juni -- Oktober       & \rom{2}       & -- \\
+    Zwiebeln    & Deutschland   & Mai -- Oktober        & --            & -- \\
+  \end{tabular}
+  \caption{Die vielsagende Tabelle}
+\label{tab:vielsagend}
+\end{table}
+% end of written content
+\end{document}
+
+% vim: ft=tex et sw=2 tw=80:
