@@ -1,0 +1,32 @@
+%%%names
+% XeTeX engine
+% use KOMA class for cool presets like A4
+\documentclass{scrartcl}
+
+% load default packages for german and unicode support
+\usepackage{polyglossia}
+\setmainlanguage{german}
+\setmainfont{Linux Libertine O} % might aswell use a neat font
+\usepackage{xltxtra}
+\usepackage{amsmath}
+
+% start with the actual content
+\begin{document}
+
+Im folgenden die Maxwell-Gleichungen:
+\begin{align}
+  % use \mathbf because its going to be a pretty demonstration of Maxwell-Eqns
+  &\nabla \times \mathbf{E} = - \frac{\partial \mathbf{B}}{\partial t}
+  \\
+  &\nabla \times \mathbf{B} = \mathbf{j} + \frac{\partial \mathbf{E}}{\partial t}
+  \\
+  % \vphantom cmd for same vertical distance between lines. Takes into account
+  % that fractions are taking up more vertical space and adjusts for it.
+  &\nabla \cdot \mathbf{E} = \rho \vphantom{\frac{\partial \mathbf{E}}{\partial t}}
+  \\
+  &\nabla \cdot \mathbf{B} = 0 \vphantom{\frac{\partial \mathbf{E}}{\partial t}}
+\end{align}
+% end of written content
+\end{document}
+
+% vim: ft=tex noai et sw=2 tw=80

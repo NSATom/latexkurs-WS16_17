@@ -1,0 +1,31 @@
+% !TEX TS-program = xelatex
+
+% use KOMA class for cool presets like A4
+\documentclass{scrartcl}
+
+% load default packages for german and unicode support
+\usepackage{polyglossia}
+\setmainlanguage{german}
+\setmainfont{Linux Libertine O} % might aswell use a neat font
+\usepackage{xltxtra}
+\usepackage{amsmath}
+\usepackage{txfonts} % for integrals
+\newcommand{\fancywierdintegral}{
+  % define integral command  for multiple use
+  \oint % first normal integral, nothing fancy yet
+  \kern-0.45em \oiintctrclockwise % counter clockwise integral shifted left abit
+  \kern-1.3em \oiintclockwise % clockwise integral shifted into the other
+  \kern-1.1em \vec{\vphantom{\oint}} % add vector arrow and shift to correct pos
+}
+
+% start with the actual content
+\begin{document}
+
+Das folgende Integral kann jetzt dargestellt werden:
+\begin{equation*}
+  \fancywierdintegral\
+\end{equation*}
+% end of written content
+\end{document}
+
+% vim: ft=tex noai et sw=2 tw=80

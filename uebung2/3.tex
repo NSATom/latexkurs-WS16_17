@@ -1,0 +1,28 @@
+% !TEX TS-program = xelatex
+
+% use KOMA class for cool presets like A4
+\documentclass{scrartcl}
+
+% load default packages for german and unicode support
+\usepackage{polyglossia}
+\setmainlanguage{german}
+\setmainfont{Linux Libertine O} % might aswell use a neat font
+\usepackage{xltxtra}
+\usepackage{amsmath}
+
+% start with the actual content
+\begin{document}
+
+Zwei Formeln aus dem tractatus philosophicus:
+\begin{equation}
+\text{tractatus philosophicus, Satz 6. }
+\left\{ % make { span the whole matrix
+    \begin{matrix}
+       & 03:  & [ o, \xi, \xi + 1] \\
+       & 231: & 1 + 1 + 1 + 1 = (1+1) + (1+1)
+    \end{matrix}
+  \right. % needed for \left{ doesnt display anything
+\end{equation}
+
+% end of written content
+\end{document}
