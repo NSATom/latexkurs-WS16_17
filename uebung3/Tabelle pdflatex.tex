@@ -1,0 +1,58 @@
+%%%names
+% pdfTeX engine
+% use KOMA class for cool presets like A4
+\documentclass{scrartcl}
+
+% load default packages for german and unicode support
+\usepackage[ngerman]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+% load font to use (default linux libertine because it is a neat one
+\usepackage{libertine}
+\usepackage{libertinust1math}
+\usepackage{booktabs}
+\usepackage{float}
+\usepackage{colortbl}
+% start with the actual content
+\begin{document}
+
+In Tabelle \ref{Gemuse} werden wichtige Informationen über Gemüse präsentiert. Die einzigen Informationen, die man als erfolgreicher Landwirt nun noch braucht, ist die Kenntnis über die Wortlänge der Wochentage. Tabelle \ref{Tage} klärt darüber auf.
+\begin{table}[t]
+	\begin{tabular}{lrrrcc}
+	
+	\toprule
+	Produkt & Herkunft & Saisonbeginn & Saisonende & Handelsklasse & verfügbar \\ \midrule
+	Auberginen & Frankreich & Juli & September & I & - \\
+	Esskastanien & Frankreich & September & September & I & - \\
+	Feldsalat & Deutschland & Oktober & Februar & II & ja \\
+	Kürbis & Deutschland & August & Dezember & I & ja \\
+	Rote Beete & Italien & September & Februar & I & ja \\
+	Zucchini & Spanien & Juni & Oktober & II & - \\
+	Zwiebeln & Deutschland & Mai & Oktober & - & - \\
+	\bottomrule
+	
+	\end{tabular}
+\caption{Gemüse-Infos}
+\label{Gemuse}
+\end{table}
+
+\begin{table}[h]
+	\begin{tabular}{|>{\columncolor[gray]{.8}}l|
+			>{\color{white}%
+				\columncolor[gray]{.2}}l|}
+		Wochentag & Buchstaben\\
+		
+		Montag & 6\\
+		Dienstag & 8\\
+		Mittwoch & 8\\
+		Donnerstag & 10\\
+		Freitag & 7\\
+		Samstag & 7\\
+		Sonntag & 7\\
+	\end{tabular}
+\end{table}
+% end of written content
+\end{document}
+
+% vim: ft=tex et sw=2 tw=80:
