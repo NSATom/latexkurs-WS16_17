@@ -1,19 +1,25 @@
-%%%names
-% XeTeX engine
-% use KOMA class for cool presets like A4
 \documentclass{scrartcl}
-
-% load default packages for german and unicode support
+\usepackage{xltxtra}
 \usepackage{polyglossia}
 \setmainlanguage{german}
-\usepackage{xltxtra}
+\usepackage{colortbl}
 \usepackage{color}
-\usepackage{booktabs}
 
-% start with the actual content
 \begin{document}
-
-% end of written content
+	\begin{table}
+		% whole left column gets blue background and the content becomes white
+		\begin{tabular}{>{\columncolor{blue}\color{white}}l>{}l}
+			% only this row gets gray background and black content
+			\rowcolor[gray]{.5}\color{black} Wochentag & Buchstaben \\
+			Montag & 6 \\
+			Dienstag & 8 \\
+			Mittwoch & 8 \\
+			Donnerstag & 10 \\
+			Freitag & 7 \\
+			Samstag & 7 \\
+			Sonntag & 7 \\
+		\end{tabular}
+		\caption{Eine wichtige Tabelle hat immer eine vielsagende Beschreibung?}
+		\label{tab:Tabelle1}
+	\end{table}
 \end{document}
-
-% vim: ft=tex et sw=2 tw=80:
