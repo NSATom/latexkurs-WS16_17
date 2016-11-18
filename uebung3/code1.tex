@@ -1,0 +1,31 @@
+% !TEX program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% !TEX spellcheck = de-DE
+
+\documentclass{scrartcl}
+
+% load default packages for german and unicode support
+\usepackage{polyglossia}
+\setmainlanguage{german}
+\usepackage{xltxtra}
+
+% nice package to embed code segments
+\usepackage{minted}
+
+% set main font to our beloved libertine fonts
+\setmainfont{Linux Libertine O}
+\setsansfont{Linux Biolinum O}
+\setmonofont[Scale=0.8]{DejaVu Sans Mono}
+
+% not really necessary, but who likes writing names on documents by hand...
+\usepackage{scrlayer-scrpage}
+\pagestyle{scrheadings}
+
+\lohead{Übung 3.1 Code} % left header
+\rohead{Hein-Erik Schnell, Jan Sören Breidenbach, Thomas Rüd} % right header
+
+\begin{document}
+\inputminted[linenos]{latex}{1.tex}
+\end{document}
+
+% vim: ft=tex et sw=2 tw=80:
