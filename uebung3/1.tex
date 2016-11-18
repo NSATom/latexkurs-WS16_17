@@ -17,6 +17,13 @@
 % set main font to our beloved libertine fonts
 \setmainfont{Linux Libertine O}
 
+% not really necessary, but who likes writing names on documents by hand...
+\usepackage{scrlayer-scrpage}
+\pagestyle{scrheadings}
+
+\lohead{Übung 3.1} % left header
+\rohead{Hein-Erik Schnell, Jan Sören Breidenbach, Thomas Rüd} % right header
+
 % create new command to easily insert roman numbers, better handled by latex
 % than just I, V etc. Command is called with \rom{SomeNumber}. In the background
 % it actually does a bit more than just execute \romannumeral we make sure
