@@ -1,5 +1,7 @@
-%%%names
-% pdfTeX engine
+% !TEX program = pdflatex
+% !TEX encoding = UTF-8 Unicode
+% !TEX spellcheck = de-DE
+
 % use KOMA class for cool presets like A4
 \documentclass{scrartcl}
 

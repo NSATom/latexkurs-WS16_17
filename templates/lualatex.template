@@ -1,5 +1,7 @@
-%%%names
-% LuaTeX engine
+% !TEX program = lualatex
+% !TEX encoding = UTF-8 Unicode
+% !TEX spellcheck = de-DE
+
 % use KOMA class for cool presets like A4
 \documentclass{scrartcl}
 
@@ -7,6 +9,9 @@
 \usepackage{polyglossia}
 \usepackage{fontspec}
 \setmainlanguage{german}
+
+% use our trustworthy otf font
+\setmainfont{Linux Libertine O}
 
 % start with the actual content
 \begin{document}

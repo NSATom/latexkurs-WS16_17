@@ -1,5 +1,7 @@
-%%%names
-% XeTeX engine
+% !TEX program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% !TEX spellcheck = de-DE
+
 % use KOMA class for cool presets like A4
 \documentclass{scrartcl}
 
@@ -7,6 +9,9 @@
 \usepackage{polyglossia}
 \setmainlanguage{german}
 \usepackage{xltxtra}
+
+% set main font to our beloved libertine fonts
+\setmainfont{Linux Libertine O}
 
 % start with the actual content
 \begin{document}
