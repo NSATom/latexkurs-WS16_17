@@ -35,11 +35,7 @@
 % start with the actual content
 \begin{document}
 % start floating environment called table because $reasons
-% forcibly put on top to fit the other on bottom
-% this table is technically easier than the other one, we think its also the
-% better looking one, but yeah, to toy around with multicolumn theres the 2nd
-% table tab:andersvielsagend
-\begin{table}[h]
+\begin{table}
   % start actual table with 2 left aligned columns, and then 4 centered columns
   \begin{tabular}{llcccc}
     % add fancy horizontal line to mark start of table
@@ -72,36 +68,6 @@
   \caption{Die vielsagende Tabelle}
   % give the float an internal name for references
   \label{tab:vielsagend}
-\end{table}
-
-\begin{table}
-  % start actual table with 2 left oriented columns one right and left with a
-  % " - " between them and 2 more centered columns this enables fake align at
-  % connection operator "-" between timespans as we use a multicolumn for the
-  % column title and when the giving a span is not necessary.
-  \begin{tabular}{llr@{ - }lcc}
-    \toprule
-    Produkt     & Herkunft      & \multicolumn{2}{c}{Saison}
-      & Handelskl. & verfügbar \\
-    \midrule
-    Auberginen  & Frankreich    & Juli          & September
-      & \Urom{1}       & nein \\
-    Esskastanien& Frankreich    & \multicolumn{2}{c}{September}
-      & \Urom{1}       & nein \\
-    Feldsalat   & Deutschland   & Oktober       & Februar
-      & \Urom{2}       & ja \\
-    Kürbis      & Deutschland   & August        & Dezember
-      & \Urom{1}       & ja \\
-    Rote Beete  & Italien       & September     & Februar
-      & \Urom{1}       & ja \\
-    Zucchini    & Spanien       & Juni          & Oktober
-      & \Urom{2}       & nein \\
-    Zwiebeln    & Deutschland   & Mai &         Oktober
-      & --            & nein \\
-    \bottomrule
-  \end{tabular}
-  \caption{Die anders vielsagende Tabelle}
-  \label{tab:andersvielsagend}
 \end{table}
 % end of written content
 \end{document}
