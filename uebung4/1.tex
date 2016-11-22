@@ -10,6 +10,9 @@
 \setmainlanguage{german}
 \usepackage{xltxtra}
 
+% load booktabs for good looking tables
+\usepackage{booktabs}
+
 % set main font to our beloved libertine fonts
 \setmainfont{Linux Libertine O}
 
@@ -18,6 +21,20 @@
 
 % start with the actual content
 \begin{document}
+\begin{table}[h]
+  \centering
+  \begin{tabular}{ll}
+    \toprule
+    Uhrzeit             & Speise        \\
+    \midrule
+    \zeit{9}{00}        & Stulle        \\
+    \zeit{13}{00}       & Mensa-Fraß    \\
+    \zeit{18}{15}       & Botanik-Pizza \\
+  \end{tabular}
+  \caption{Lecker Essen}
+  \label{tab:essen}
+\end{table}
+
 % end of written content
 \end{document}
 
