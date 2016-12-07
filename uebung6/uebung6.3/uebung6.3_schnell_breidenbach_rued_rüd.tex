@@ -1,0 +1,34 @@
+% !TEX program = pdflatex
+% !TEX encoding = UTF-8 Unicode
+% !TEX spellcheck = de-DE
+
+% use KOMA class for cool presets like A4
+\documentclass{scrartcl}
+
+% load default packages for german and unicode support
+\usepackage[ngerman]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+% load font to use (default linux libertine because it is a neat one
+\usepackage{libertine}
+\usepackage{libertinust1math}
+\usepackage{pgfplots}
+% start with the actual content
+\begin{document}
+	\pgfplotsset{width=15cm, compat=1.14}
+	\begin{tikzpicture}
+	\begin{axis}[xlabel=Zeit,ylabel=Zerfaelle]
+	\addplot+[only marks, mark size=0.5pt,
+	error bars/.cd,
+	y dir=both,y explicit,] 
+	table[x=zeit, y=zerfaelle, y error=error, %in der datei in error umbenannt
+	]
+	{06_messwerte.dat};
+	\end{axis}
+	\end{tikzpicture}
+
+% end of written content
+\end{document}
+
+% vim: ft=tex et sw=2 tw=80:
