@@ -1,0 +1,47 @@
+% !TEX program = pdflatex
+% !TEX encoding = UTF-8 Unicode
+% !TEX spellcheck = de-DE
+
+% use KOMA class for cool presets like A4
+\documentclass{scrartcl}
+
+% load default packages for german and unicode support
+\usepackage[ngerman]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+% load font to use (default linux libertine because it is a neat one
+\usepackage{libertine}
+\usepackage{libertinust1math}
+\usepackage{pgfplots}
+
+% start with the actual content
+\begin{document}
+%start histogram
+\pgfplotsset{compat=1.14}
+\begin{tikzpicture}
+\begin{axis}[
+      ybar,
+      enlargelimits=0.2,
+      legend style={at={(0.5,-0.1)},
+      	anchor=north,legend columns=-1},
+      ylabel={Antworten},
+      symbolic x coords={Wie finden Sie Himbeereis?,Mögen Sie Tanzen?,Was halten Sie von Topfpflanzen?},
+      xtick=data,
+      nodes near coords,
+      nodes near coords align={vertical},
+      width=14cm,
+      bar width=15pt
+      ]
+\addplot coordinates {(Wie finden Sie Himbeereis?,9) (Mögen Sie Tanzen?,32) (Was halten Sie von Topfpflanzen?,28)};
+\addplot coordinates {(Wie finden Sie Himbeereis?,1) (Mögen Sie Tanzen?,63) (Was halten Sie von Topfpflanzen?,17)};
+\addplot coordinates {(Wie finden Sie Himbeereis?,2) (Mögen Sie Tanzen?,52) (Was halten Sie von Topfpflanzen?,12)};
+\addplot coordinates {(Wie finden Sie Himbeereis?,186) (Mögen Sie Tanzen?,49) (Was halten Sie von Topfpflanzen?,26)};
+\addplot coordinates {(Wie finden Sie Himbeereis?,0) (Mögen Sie Tanzen?,2) (Was halten Sie von Topfpflanzen?,115)};
+\legend{furchtbar,meh,ganz gut, genial, keine Ang.}
+\end{axis}
+\end{tikzpicture}
+% end of written content
+\end{document}
+
+% vim: ft=tex et sw=2 tw=80:
