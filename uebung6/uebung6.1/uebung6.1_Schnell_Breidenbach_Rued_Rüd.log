@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.10.26)  7 DEC 2016 21:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.10.26)  7 DEC 2016 22:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**./uebung6.2_schnell_breidenbach_rued_rüd.tex
-(./uebung6.2_schnell_breidenbach_rued_rüd.tex
+**./uebung6.1_Schnell_Breidenbach_Rued_Rüd.tex
+(./uebung6.1_Schnell_Breidenbach_Rued_Rüd.tex
 LaTeX2e <2016/03/31> patch level 3
 Babel <3.9r> and hyphenation patterns for 83 language(s) loaded.
 (c:/texlive/2016/texmf-dist/tex/latex/koma-script/scrartcl.cls
@@ -1174,8 +1174,8 @@ File: tikzlibraryplotmarks.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
 (c:/texlive/2016/texmf-dist/tex/generic/pgf/libraries/pgflibraryplotmarks.code.
 tex
 File: pgflibraryplotmarks.code.tex 2015/08/03 v3.0.1a (rcs-revision 1.14)
-))) (./uebung6.2_schnell_breidenbach_rued_rüd.aux)
-\openout1 = `uebung6.2_schnell_breidenbach_rued_rüd.aux'.
+))) (./uebung6.1_Schnell_Breidenbach_Rued_Rüd.aux)
+\openout1 = `uebung6.1_Schnell_Breidenbach_Rued_Rüd.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
 LaTeX Font Info:    ... okay on input line 19.
@@ -1359,7 +1359,7 @@ Overfull \hbox (13.37932pt too wide) in paragraph at lines 43--44
 [1
 
 {c:/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-(./uebung6.2_schnell_breidenbach_rued_rüd.aux) ) 
+(./uebung6.1_Schnell_Breidenbach_Rued_Rüd.aux) ) 
 Here is how much of TeX's memory you used:
  27386 strings out of 493013
  668344 string characters out of 6136992
@@ -1373,7 +1373,7 @@ ts/enc/dvips/libertinust1math/libusMR.enc}{c:/texlive/2016/texmf-dist/fonts/enc
 /dvips/libertine/lbtn_76gpa5.enc}<c:/texlive/2016/texmf-dist/fonts/type1/public
 /libertinust1math/LibertinusT1Math.pfb><c:/texlive/2016/texmf-dist/fonts/type1/
 public/libertine/LinLibertineT.pfb>
-Output written on uebung6.2_schnell_breidenbach_rued_rüd.pdf (1 page, 198383 by
+Output written on uebung6.1_Schnell_Breidenbach_Rued_Rüd.pdf (1 page, 198022 by
 tes).
 PDF statistics:
  21 PDF objects out of 1000 (max. 8388607)
