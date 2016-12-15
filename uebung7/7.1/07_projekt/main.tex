@@ -1,0 +1,38 @@
+% !TEX program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% !TEX spellcheck = de_DE
+
+\documentclass{scrreprt}
+
+\usepackage{blindtext,booktabs,color,nicefrac,polyglossia,setspace,xltxtra,yfonts,hyperref,}
+
+\setmainlanguage{german}
+
+\setromanfont[Mapping=tex-text]{Linux Libertine O}
+\setsansfont[Mapping=tex-text]{Linux Biolinum O}
+
+\onehalfspacing
+\usepackage{subcaption} %für Abb. 4
+\usepackage{imakeidx}
+\makeindex
+
+\begin{document}
+\author{Rüd, Schnell, Breidenbach}
+\title{Uebung 7}
+\date{\today}
+\maketitle
+
+\subsection*{Abstract}
+Dieses Dokument dient der Übung des Satzes von umfangreichen Projekten in \LaTeX\index{LaTeX@\LaTeX}. Es gehört zum siebten Übungszettel des \LaTeX-Kurses im Wintersemester 2016\,/\,17. Inhaltlich hat es so ziemlich nichts zu bieten, es könnte aber interessant sein, sich den zugehörigen Sourcecode mal anzusehen, da er eine Menge interessanter \LaTeX-Kommandos enthält.
+
+
+
+\input{chapter1}
+\input{chapter2}
+\input{chapter4}
+\printindex
+\renewcommand{\listfigurename}{Liste der Abbildungen}
+\renewcommand{\listtablename}{Liste der Tabellen}
+\listoffigures
+\listoftables
+\end{document}
