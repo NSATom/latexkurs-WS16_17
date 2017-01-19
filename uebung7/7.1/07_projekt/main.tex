@@ -10,7 +10,9 @@
 
 \setromanfont[Mapping=tex-text]{Linux Libertine O}
 \setsansfont[Mapping=tex-text]{Linux Biolinum O}
-
+\usepackage{amsmath}
+\usepackage{tikz}
+\usepackage{pgfplots}
 \onehalfspacing
 \usepackage{subcaption} %für Abb. 4
 \usepackage{imakeidx}
@@ -21,15 +23,19 @@
 \title{Uebung 7}
 \date{\today}
 \maketitle
-
+\tableofcontents
+\newpage
 \subsection*{Abstract}
 Dieses Dokument dient der Übung des Satzes von umfangreichen Projekten in \LaTeX\index{LaTeX@\LaTeX}. Es gehört zum siebten Übungszettel des \LaTeX-Kurses im Wintersemester 2016\,/\,17. Inhaltlich hat es so ziemlich nichts zu bieten, es könnte aber interessant sein, sich den zugehörigen Sourcecode mal anzusehen, da er eine Menge interessanter \LaTeX-Kommandos enthält.
 
 
 
-\input{chapter1}
-\input{chapter2}
-\input{chapter4}
+\input{./Chapter1/chapter1}
+\input{./Chapter2/chapter2}
+\input{./Chapter4/chapter4}
+\chapter{Extra Kram}
+\input{./Extra/Symmetrien}
+\input{./Extra/matr}
 \printindex
 \renewcommand{\listfigurename}{Liste der Abbildungen}
 \renewcommand{\listtablename}{Liste der Tabellen}

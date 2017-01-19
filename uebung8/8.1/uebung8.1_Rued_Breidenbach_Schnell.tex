@@ -1,0 +1,26 @@
+% !TEX program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% !TEX spellcheck = de-DE
+
+% use KOMA class for cool presets like A4
+\documentclass{scrartcl}
+
+% load default packages for german and unicode support
+\usepackage{polyglossia}
+\setmainlanguage{german}
+\usepackage{xltxtra}
+\usepackage[backend=biber, citestyle=authoryear, bibstyle=authoryear]{biblatex}
+\addbibresource{bibfile.bib}
+% set main font to our beloved libertine fonts
+\setmainfont{Linux Libertine O}
+
+% start with the actual content
+\begin{document}
+	
+Physik ist nicht lustig, das sollte jedem klar sein, der es studiert. Aber sie ist interessant. \cite[S. 2]{Demtr} Vor allem theoretische Physik. \cite{Nolt}
+Aber man meistert das Studium nicht ohne ein wenig Anstrengung. \cite{Bart}
+\printbibliography
+% end of written content
+\end{document}
+
+% vim: ft=tex et sw=2 tw=80:

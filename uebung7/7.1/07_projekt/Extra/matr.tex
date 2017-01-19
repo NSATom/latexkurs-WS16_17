@@ -1,0 +1,108 @@
+\section{Matrizen}
+\subsection{Der ultimative Matrix-Trick}
+In der linearen Algebra wird gerne die Aufgabe gestellt, eine Projektions-, Dreh- oder Spiegelmatrix $A$ mit vorgegebenen Eigenschaften aufzustellen. Dazu stellt man dann meist ein mehr oder weniger kompliziertes Gleichungssystem auf, das es dann zu lösen gilt. Es gibt aber einen viel einfacheren Weg.\\
+Für den Fall, dass man \textit{genau} weiß, wohin die Einheitsvektoren abgebildet werden, ist die Lösung sehr einfach. Schauen wir erstmal, was passiert, wenn wir eine beliebige Matrix $A$ auf die Einheitsvektoren anwenden:
+
+\begin{align}
+A \,\vec{e_{1}} = 
+\begin{pmatrix}
+a_{11} & a_{12} & a_{13}\\
+a_{21} & a_{22} & a_{23}\\
+a_{31} & a_{32} & a_{33}
+\end{pmatrix}
+\begin{pmatrix}
+1\\
+0\\
+0
+\end{pmatrix}
+=
+\begin{pmatrix}
+a_{11}\\
+a_{21}\\
+a_{31}
+\end{pmatrix}\\
+A \,\vec{e_{2}} = 
+\begin{pmatrix}
+a_{11} & a_{12} & a_{13}\\
+a_{21} & a_{22} & a_{23}\\
+a_{31} & a_{32} & a_{33}
+\end{pmatrix}
+\begin{pmatrix}
+0\\
+1\\
+0
+\end{pmatrix}
+=
+\begin{pmatrix}
+a_{12}\\
+a_{22}\\
+a_{32}
+\end{pmatrix}\\
+A \,\vec{e_{3}} = 
+\begin{pmatrix}
+a_{11} & a_{12} & a_{13}\\
+a_{21} & a_{22} & a_{23}\\
+a_{31} & a_{32} & a_{33}
+\end{pmatrix}
+\begin{pmatrix}
+0\\
+0\\
+1
+\end{pmatrix}
+=
+\begin{pmatrix}
+a_{13}\\
+a_{23}\\
+a_{33}
+\end{pmatrix}
+\end{align}\\
+Die drei Ergebnisse sind genau die Einträge der Matrix, wobei die erste Spalte das Abbild der x-Achse, die zweite Spalte das Abbild der y-Achse und die dritte Spalte das Abbild der z-Achse darstellt.\\
+Als Beispiel suchen wir die Matrix $A$, die alle Punkte um 90° gegen den Uhrzeigersinn (im mathematisch positiven Sinn) um die z-Achse dreht. Nun überlegen wir uns, was mit den Einheitsvektoren passiert:
+\begin{align}
+A\,
+\begin{pmatrix}
+1\\
+0\\
+0
+\end{pmatrix}
+&=
+\begin{pmatrix}
+0\\
+1\\
+0
+\end{pmatrix}\\
+A\,
+\begin{pmatrix}
+0\\
+1\\
+0
+\end{pmatrix}
+&=
+\begin{pmatrix}
+-1\\
+0\\
+0
+\end{pmatrix}\\
+A\,
+\begin{pmatrix}
+0\\
+0\\
+1
+\end{pmatrix}
+&=
+\begin{pmatrix}
+0\\
+0\\
+1
+\end{pmatrix}
+\end{align}\\
+Die gesuchte Matrix $A$ ist also:
+
+\begin{align}
+A = 
+\begin{pmatrix}
+0&-1&0\\
+1&0&0\\
+0&0&1
+\end{pmatrix}
+\end{align}

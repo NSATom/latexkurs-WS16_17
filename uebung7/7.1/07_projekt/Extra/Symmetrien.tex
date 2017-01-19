@@ -1,0 +1,109 @@
+\section{Symmetrien}
+\subsection{Symmetrische und antisymmetrische Funktionen}
+
+Unser erstes Hilfsmittel, um uns das Leben leichter zu machen, sind Symmetrien. Wir betrachten hier nur \textbf{Spiegelsymmetrie zur y-Achse} (symmetrisch) und \textbf{Punktsymmetrie zum Ursprung} (antisymmetrisch). Symmetrische Funktionen erfüllen die Bedingung
+\begin{align}
+f(x) = f(-x)
+\label{sym}
+\end{align}
+
+Antisymmetrische Funktionen erfüllen die Bedingung:
+\begin{align}
+g(x) = -g(-x)
+\label{asym}
+\end{align}
+Für dieses Kapitel wird $f(x)$ immer eine symmetrische und $g(x)$ immer eine antisymmetrische Funktion darstellen. Alle folgenden Überlegungen basieren auf den Gleichungen \ref{sym} und \ref{asym}. \\
+\\
+\begin{figure}[h]
+\begin{tikzpicture}
+\begin{axis}[
+domain=-2:2,
+axis x line=bottom, % no box around the plot, only x and y axis
+axis y line=left, % the * suppresses the arrow tips
+enlargelimits=upper] % extend the axes a bit to the right and top
+\addplot[no markers, blue]{x}
+node[pos=0.7,pin=135:{\color{red}$g(x) = x$}] {};
+\end{axis}
+\end{tikzpicture}
+\begin{tikzpicture}
+\begin{axis}[
+domain=-2:2,
+axis x line=bottom, % no box around the plot, only x and y axis
+axis y line=left, % the * suppresses the arrow tips
+enlargelimits=upper] % extend the axes a bit to the right and top
+\addplot[no markers, blue]{x*x}
+node[pos=0.3,pin=30:{\color{red}$f(x) = x^{2}$}] {};
+\end{axis}
+\end{tikzpicture}
+\caption{Antisymmetrische und Symmetrische Funktion}
+\label{SymAndAnti}
+\end{figure}\\
+\\
+Da Flächen \textbf{unter} der x-Achse ($y=0$) \textbf{negative} Beiträge geben, lassen sich einige Integrale besonders einfach lösen oder zumindest stark vereinfachen. Integriert man eine antisymmetrische Funktion $g(x)$ über \textbf{symmetrische Integrationsgrenzen}, d.h. von $-a$ bis $a$, \,ist das Ergebnis immer \textbf{null}.\\
+\begin{align}
+\int_{-a}^a g(x) \, dx = G(a) - G(-a) = 0
+\end{align}\\
+Hier nutzen wir aus, dass $G(a)=G(-a)$ ist, die Stammfunktion $G(x)$ einer antisymmetrischen Funktion $g(x)$ also eine symmetrische Funktion ist.
+\footnote{Siehe Beweis \ref{Stammfkt}.}\\
+Integriert man eine symmetrische Funktion $f(x)$ über symmetrische Grenzen, sind die Flächeninhalte für positive und negative x-Werte gleich:\\
+\begin{align}
+\int_{-a}^a f(x) \, dx &= F(a) - F(-a) = F(a) -(-F(a))\\
+&= 2\,F(a) = 2 \int_{0}^a f(x) \, dx
+\end{align}\\
+Hier nutzen wir aus, dass die Stammfunktion $F(x)$ einer symmetrischen Funktion $f(x)$ eine antisymmetrische Funktion ist.\footnote{Siehe Beweis \ref{Stammfkt}.}\\
+Beim Integrieren einer symmetrischen Funktion haben wir also noch nicht so viel gewonnen. Müssen wir aber eine antisymmetrische Funktion über symmetrische Grenzen integrieren, wissen wir das Ergebnis, ohne eine Stammfunktion bilden zu müssen.\\
+\textbf{Wichtig:} Beide Tricks funktionieren nur, wenn die Integrationsgrenzen, wie schon oft gesagt,  symmetrisch sind.
+
+\subsection{Beispiele für (anti)symmetrische Funktionen}
+\fbox{\begin{minipage}{\textwidth}
+		\centering
+	Alle Polynome mit ausschließlich geraden Exponenten sind symmetrisch.\\
+	Alle Polynome mit ausschließlich ungeraden Exponenten sind antisymmetrisch.
+\end{minipage}}
+
+ \begin{align*}
+ f(x) = \dots + ax^{-4} + bx^{-2} + c + dx^{2} + ex^{4} + fx^{6}\dots\\
+ g(x) = \dots + ax^{-3} + bx^{-1} + cx + dx^{3} + ex^{5}+\dots
+ \end{align*}\\
+ Außerdem:
+ \begin{align*}
+ f(x) = cos(x)\\
+ g(x) = sin(x)
+ \end{align*}
+ 
+ Die meisten anderen Funktionen weisen keine Symmetrien auf.
+ 
+ \subsection{Multiplikation (anti)symmetrischer Funktionen}
+ 
+ Was passiert eigentlich, wenn eine (anti)symmetrische Funktion mit einer (anti)symmetrischen Funktion multipliziert wird?\\
+ \\
+ Seien $f(x)$,$v(x)$ symmetrisch und $g(x)$,$k(x)$ antisymmetrisch:\\
+ \begin{align*}
+ u(x)=f(x) v(x) = f(-x) v(-x) = u(-x)\\
+ \\
+ u(x)=f(x) g(x) = f(-x) (-g(-x)) = - f(-x) g(-x) = -u(-x)\\
+ \\
+ u(x)=g(x) k(x) = (-f(-x)) (-g(-x)) = f(-x) g(-x) = u(-x)
+ \end{align*}\\
+ Es zeigt sich, dass sich (anti)symmetrische Funktion bei Multiplikation wie Multiplikationen von $1$ und $-1$ verhalten.\\
+ \begin{itemize}{}{}
+ 	 \item Multipliziert man zwei symmetrische Funktionen, bleibt das Produkt symmetrisch.
+ 	 \item Multipliziert man eine symmetrische und eine antisymmetrische Funktion, ist das Produkt antisymmetrisch.
+ 	 \item Multipliziert man zwei antisymmetrische Funktionen, ist das Produkt symmetrisch.
+ \end{itemize}
+
+\subsection{Addition (anti)symmetrischer Funktionen}
+\textit{"Und wenn ich eine Summe aus (anti)symmetrischen Funktionen integrieren muss?"}\\
+
+\begin{align*}
+\int_{-a}^{a} f(x) + g(x) dx = \int_{-a}^{a} f(x) dx + \int_{-a}^{a} g(x) dx  
+\end{align*}\\
+No more words needed\dots\\
+\subsection{Rechenbeispiele}
+\begin{align*}
+\int_{-a}^{a} x^{2} sin(x) dx &= 0 & \int_{-a}^{a} x cos(x) dx &= 0\\
+\int_{-a}^{a} \frac{sin(x)}{x^{2}} dx &= 0 & \int_{-a}^{a} \frac{cos(x)}{x} dx &= 0\\
+\end{align*}\\
+In allen vier Beispielen wurde jeweils eine symmetrische mit einer antisymmetrischen Funktion multipliziert und somit eine antisymmetrische Funktion geschaffen.\\
+\\
+\textbf{Anmerkung:} Irgendwie hab ich das Gefühl, dass die Lehrer euch nie eine solche Aufgabe geben werden. Da ginge doch der ganze Spaß am Integrieren verloren. Deshalb jetzt die wirklichen Tricks!
