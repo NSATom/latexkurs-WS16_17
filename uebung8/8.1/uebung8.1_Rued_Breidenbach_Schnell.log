@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/W32TeX) (preloaded format=xelatex 2016.12.13)  18 JAN 2017 11:41
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/W32TeX) (preloaded format=xelatex 2016.12.13)  19 JAN 2017 14:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -892,42 +892,46 @@ Package biblatex Info: ... file 'uebung8.1_Rued_Breidenbach_Schnell.bbl' found.
 (./uebung8.1_Rued_Breidenbach_Schnell.bbl)
 Package biblatex Info: Reference section=0 on input line 18.
 Package biblatex Info: Reference segment=0 on input line 18.
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'LinuxLibertineO(1)' created for font 'Linux Libertine O' with
+. options [Ligatures=TeX,VerticalPosition=Superior].
+. 
+. This font family consists of the following NFSS series/shapes:
+. - 'normal' (m/n) with NFSS spec.: <->"Linux Libertine
+. O/OT:script=latn;language=DFLT;mapping=tex-text;+sups;"
+. - 'small caps'  (m/sc) with NFSS spec.: <->"Linux Libertine
+. O/OT:script=latn;language=DFLT;mapping=tex-text;+sups;+smcp;"- 'bold' (bx/n)
+. with NFSS spec.: <->"Linux Libertine
+. O/B/OT:script=latn;language=DFLT;mapping=tex-text;+sups;"
+. - 'bold small caps'  (bx/sc) with NFSS spec.: <->"Linux Libertine
+. O/B/OT:script=latn;language=DFLT;mapping=tex-text;+sups;+smcp;"- 'italic'
+. (m/it) with NFSS spec.: <->"Linux Libertine
+. O/I/OT:script=latn;language=DFLT;mapping=tex-text;+sups;"
+. - 'italic small caps'  (m/itsc) with NFSS spec.: <->"Linux Libertine
+. O/I/OT:script=latn;language=DFLT;mapping=tex-text;+sups;+smcp;"- 'bold
+. italic' (bx/it) with NFSS spec.: <->"Linux Libertine
+. O/BI/OT:script=latn;language=DFLT;mapping=tex-text;+sups;"
+. - 'bold italic small caps'  (bx/itsc) with NFSS spec.: <->"Linux Libertine
+. O/BI/OT:script=latn;language=DFLT;mapping=tex-text;+sups;+smcp;"
+.................................................
+ [1
 
-
-LaTeX Warning: Citation 'Demtr' on page 1 undefined on input line 20.
-
-
-LaTeX Warning: Citation 'Nolt' on page 1 undefined on input line 20.
-
-
-LaTeX Warning: Citation 'Bart' on page 1 undefined on input line 21.
-
-
-LaTeX Warning: Empty bibliography on input line 22.
-
-[1
-
-] (./uebung8.1_Rued_Breidenbach_Schnell.aux)
-
-LaTeX Warning: There were undefined references.
-
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                uebung8.1_Rued_Breidenbach_Schnell
-(biblatex)                and rerun LaTeX afterwards.
-
+]
+(./uebung8.1_Rued_Breidenbach_Schnell.aux)
 Package logreq Info: Writing requests to 'uebung8.1_Rued_Breidenbach_Schnell.ru
 n.xml'.
 \openout1 = `uebung8.1_Rued_Breidenbach_Schnell.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 22825 strings out of 493589
- 443664 string characters out of 6146759
- 912186 words of memory out of 5000000
- 26076 multiletter control sequences out of 15000+600000
- 4215 words of font info for 28 fonts, out of 8000000 for 9000
+ 22890 strings out of 493589
+ 445923 string characters out of 6146759
+ 912251 words of memory out of 5000000
+ 26129 multiletter control sequences out of 15000+600000
+ 4686 words of font info for 37 fonts, out of 8000000 for 9000
  1349 hyphenation exceptions out of 8191
- 66i,6n,63p,10444b,5482s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 66i,6n,65p,10444b,5836s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on uebung8.1_Rued_Breidenbach_Schnell.pdf (1 page).
