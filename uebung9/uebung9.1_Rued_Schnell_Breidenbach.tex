@@ -1,0 +1,39 @@
+% !TEX program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% !TEX spellcheck = de-DE
+
+% use KOMA class for cool presets like A4
+\documentclass{beamer}
+
+% load default packages for german and unicode support
+\usepackage{polyglossia}
+\setmainlanguage{german}
+\usepackage{xltxtra}
+
+% set main font to our beloved libertine fonts
+\setmainfont{Linux Libertine O}
+\usetheme{Rochester}
+\setbeamercolor{footnote}{bg=red}
+% start with the actual content
+\begin{document}
+\title{Verwendungsbeispiele in \LaTeX}
+\author{Hein-Erik Schnell, Sören Breidenbach, Thomas Rüd}
+
+\frame{\titlepage}
+
+\begin{frame}{Erste Folie}
+	Inhalt der ersten Folie
+	\begin{itemize}[<+->]
+		\item Hallo
+		\item<+-> du da
+		\item<+> ich bin da
+	\end{itemize}
+\begin{block}{Test}
+	Inhalt eines Blocks
+\end{block}
+\end{frame}
+
+% end of written content
+\end{document}
+
+% vim: ft=tex et sw=2 tw=80:
