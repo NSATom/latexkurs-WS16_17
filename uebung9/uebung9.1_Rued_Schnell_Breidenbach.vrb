@@ -1,0 +1,10 @@
+\frametitle{Was kann \LaTeX ?}\framesubtitle {Code-Beispiel}
+^^I\begin{block}{Code-Beispiel}
+^^I^^I\begin{verbatim}
+\usepackage{graphicx}
+\begin{document}
+\includegraphics[width=2cm]{filename.jpg}
+\caption{Bild 1}
+\end{document}
+\end{verbatim}
+^^I\end{block}

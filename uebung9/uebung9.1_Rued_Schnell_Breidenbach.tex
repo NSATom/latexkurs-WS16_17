@@ -12,8 +12,12 @@
 
 % set main font to our beloved libertine fonts
 \setmainfont{Linux Libertine O}
-\usetheme{Rochester}
-\setbeamercolor{footnote}{bg=red}
+\usetheme{Rochester} %Theme
+\usecolortheme{whale}
+\usepackage{showexpl}
+\usepackage{showexpl,xcolor}
+\definecolor{light-gray}{gray}{0.95}
+
 % start with the actual content
 \begin{document}
 \title{Verwendungsbeispiele in \LaTeX}
@@ -21,16 +25,55 @@
 
 \frame{\titlepage}
 
-\begin{frame}{Erste Folie}
-	Inhalt der ersten Folie
-	\begin{itemize}[<+->]
-		\item Hallo
-		\item<+-> du da
-		\item<+> ich bin da
+\begin{frame}{Übersicht}
+	\tableofcontents
+\end{frame}
+
+\section{Präsentationen}
+\subsection{Was ist wichtig?}
+
+\begin{frame}{Was kann \LaTeX?}{Präsentationen}
+\begin{itemize}
+	\item[]<1-> \LaTeX bietet die Möglichkeit, Präsentationen zu erstellen.
+	\item[]<1->
+	\item[]<2-> Dabei ist wichtig:
+		\begin{itemize}
+		\item[]<3->
+		\item<3-> Nicht zu viel Text
+		\item<4-> übersichtlich gestalten
+		\item<5-> Rechtschreibung
+	    \end{itemize}	
+\end{itemize}	
+\end{frame}
+
+\section{Grafiken}
+\subsection{Paket graphicx}
+
+\begin{frame}{Was kann \LaTeX?}{Grafiken}
+	\begin{itemize}
+		\item[]<1-> Mit dem Paket \textcolor{blue}{graphicx} kann man Bilder und Grafiken einfügen
+		\item[]<1->
+		\item[]<2-> Was kann \textcolor{blue}{graphicx}?
+		\begin{itemize}
+			\item[]<3->
+			\item<3-> Größe der Bilder einstellen
+			\item<4-> Bilder rotieren
+			\item<5-> Beschriften
+		\end{itemize}
 	\end{itemize}
-\begin{block}{Test}
-	Inhalt eines Blocks
-\end{block}
+	
+\end{frame}
+\subsection{Source-Code-Beispiel}
+\begin{frame}[fragile]{Was kann \LaTeX?}{Code-Beispiel}
+	\begin{block}{Code-Beispiel}
+		\begin{verbatim}
+\usepackage{graphicx}
+\begin{document}
+\includegraphics[width=2cm]{filename.jpg}
+\caption{Bild 1}
+\end{document}
+\end{verbatim}
+	\end{block}
 \end{frame}
 
 % end of written content
