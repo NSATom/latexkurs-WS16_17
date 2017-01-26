@@ -1,7 +1,0 @@
-\beamer@endinputifotherversion {3.36pt}
-\select@language {german}
-\beamer@sectionintoc {1}{Präsentationen}{3}{0}{1}
-\beamer@subsectionintoc {1}{1}{Was ist wichtig?}{3}{0}{1}
-\beamer@sectionintoc {2}{Grafiken}{8}{0}{2}
-\beamer@subsectionintoc {2}{1}{Paket graphicx}{8}{0}{2}
-\beamer@subsectionintoc {2}{2}{Source-Code-Beispiel}{13}{0}{2}

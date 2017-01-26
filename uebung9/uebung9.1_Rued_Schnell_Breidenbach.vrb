@@ -1,10 +1,8 @@
-\frametitle{Was kann \LaTeX ?}\framesubtitle {Code-Beispiel}
-^^I\begin{block}{Code-Beispiel}
-^^I^^I\begin{verbatim}
-\usepackage{graphicx}
-\begin{document}
-\includegraphics[width=2cm]{filename.jpg}
-\caption{Bild 1}
-\end{document}
-\end{verbatim}
-^^I\end{block}
+\frametitle{Was kann \LaTeX ?}\framesubtitle {Code-Beispiel: graphicx}
+  \begin{block}{Parameter von graphicx}
+    \begin{LTXexample}[width=.3\linewidth]
+      \includegraphics{tux}
+      \includegraphics[scale=0.7,angle=45]{tux}
+      \includegraphics[height=.8cm,width=1cm]{tux}
+    \end{LTXexample}
+  \end{block}
