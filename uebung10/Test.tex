@@ -1,0 +1,29 @@
+% !TEX program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% !TEX spellcheck = de-DE
+
+% use KOMA class for cool presets like A4
+\documentclass{scrlttr2}
+
+% load default packages for german and unicode support
+\usepackage{polyglossia}
+\setmainlanguage{german}
+\usepackage{xltxtra}
+
+% set main font to our beloved libertine fonts
+\setmainfont{Linux Libertine O}
+\setkomavar{fromname}{Benjamin Blümchen}
+\setkomavar{fromaddress}{Kirchhoff-Institut für Physik\\69120 Heidelberg\\Im Neuenheimer Feld 227\\Raum 2.07}
+\setkomavar{fromphone}{Tel: 01138/143669}
+\setkomavar{fromemail}{blümchen@elefant.de}
+% start with the actual content
+\begin{document}
+\begin{letter}{Blanvalet Verlag GmbH\\1234 Berlin\\Heidelberger Straße 226}
+	\opening{Sehr geehrter Herr Valetblan}
+	Ich möchte mich hiermit auf die von Ihnen ausgeschriebene Stelle als \LaTeX-Spezialist bewerben.
+	\closing{Liebe Grüße}
+\end{letter}
+% end of written content
+\end{document}
+
+% vim: ft=tex et sw=2 tw=80:
